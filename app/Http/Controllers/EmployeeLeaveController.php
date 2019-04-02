@@ -136,7 +136,7 @@ class EmployeeLeaveController extends Controller
         $max_leave_day = $leave_type->max_leave_day;
 
 
-        $sum_check = EmployeeLeave::where('employee_id', $employee_id)->where('leave_type_id', $leave_type_id)->where('leave_status', '!=', 'Reject')->sum('number_of_day');
+        $sum_check = EmployeeLeave::where('employee_id', $employee_id)->where('leave_type_id', $leave_type_id)->where('leave_status', '!=', 'Reject')->SUM('number_of_day');
         $sum_check+=$current_leave_number_of_day;
 
         if ($sum_check > $max_leave_day) {
