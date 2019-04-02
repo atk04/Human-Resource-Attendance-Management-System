@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class EmployeeLeave extends Model
 {
-    
+
 
 
     protected $fillable=[
@@ -49,11 +49,7 @@ class EmployeeLeave extends Model
         return $array;
     }
 
-    public function getNumberOfDayAttribute($value)
-    {
-        return intval($value);
 
-    }
 
 
 }

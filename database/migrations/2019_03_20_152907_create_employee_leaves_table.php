@@ -17,7 +17,7 @@ class CreateEmployeeLeavesTable extends Migration
             $table->increments('id');
             $table->date('start_date');
             $table->date('end_date');
-            $table->string('number_of_day');
+            $table->integer('number_of_day');
             $table->date('submit_date');
             $table->integer('remain_day');
             $table->string('leave_status');
