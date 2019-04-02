@@ -9,6 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class EmployeeLeave extends Model
 {
+    protected $casts=[
+        'number_of_day'=>'integer',
+    ];
 
 
 
