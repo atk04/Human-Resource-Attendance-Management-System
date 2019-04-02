@@ -27,7 +27,7 @@
 
     <div class="card mr-5" style="width:23em;height:12em;">
         <div class="card-header" style="background-color:yellow">
-            ATTENDANCE
+            ATTENDANCE <span class="small">(Entries last week)</span>
 
         </div>
         <div class="card-body collapse show">
