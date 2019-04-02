@@ -290,7 +290,7 @@ class ReportController extends Controller
         $year = $request->year;
         
 
-        $yearly_attend_data = DB::table('employees')->OrderBy('employees.id', 'desc')
+        $yearly_attend_data = DB::table('employees')
             ->join('attendances', function ($join) use ($year) {
                 $join->on('employees.id', '=', 'attendances.employee_id')->where('attendances.date', 'LIKE', '%' . $year . '%')
                     ->groupBy('employees.position_code');
